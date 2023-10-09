@@ -1,0 +1,145 @@
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+}
+
+#smalltitle {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 21px 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton-home {
+    outline: none;
+    padding: 0;
+    margin: 15px;
+    background-color: transparent;
+    text-align: left;
+    color: wheat;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    transition-duration: 0.4s;
+}
+
+.boton-home:hover {
+    color: white;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+    transform: scale(1);
+}
+
+.boton-adopcion {
+    border: none;
+    background-color: transparent;
+    color: wheat;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    transition-duration: 0.4s;
+}
+
+.boton-unite {
+    border: none;
+    background-color: transparent;
+    color: wheat;
+    font-weight: bold;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    transition-duration: 0.4s;
+}
+
+.boton-adopcion:hover {
+    color: white;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.boton-unite:hover {
+    color: white;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.botones-derecha {
+    margin: 0px 100px 0px 100px;
+}
+
+#barra {
+    background-color: steelblue;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    margin: 0;
+}
+
+.botones-container {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.botones-container .nav-button {
+    background-color: steelblue;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 30px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    display: inline-flex;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    float: left;
+}
+
+.botones-container .nav-button:not(:last-child) {
+    border-right: none;
+}
+
+.nav-button {
+    color: wheat;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    transition-duration: 0.4s;
+}
+
+.nav-button a {
+    text-decoration: none;
+    cursor: pointer;
+    color: wheat;
+}
+
+.nav-button:hover {
+    color: white;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+}
