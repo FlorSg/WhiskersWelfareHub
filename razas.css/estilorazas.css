@@ -172,81 +172,6 @@ body {
 
 /* ----------------------------------------- CSS NAVBAR ----------------------------------*/
 /* ----------------------------------------- SLIDESHOW START ----------------------------------*/
-.slideshow-wrapper {
-    display: flex;
-    margin: 20px;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-}
-
-.slideshow-container {
-    position: relative;
-    width: 80%;
-    height: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    border-radius: 14px;
-}
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
-.slideshow-buttons {
-    position: relative;
-    text-align: center;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.prev,
-.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    color: steelblue;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.slide-description {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 /* ----------------------------------------- SLIDESHOW END ----------------------------------*/
 
 /* ----------------------------------------- CARDS ----------------------------------*/
@@ -273,6 +198,8 @@ body {
     align-items: center;
     box-sizing: border-box;
     transition: transform 0.3s ease;
+    position:relative;
+    padding-bottom: 30px;
 }
 
 .card:hover {
@@ -282,12 +209,11 @@ body {
 .card-image {
     display: flex;
     align-items: center;
-    flex: 1;
     padding: 5px;
 }
 
 .card-image img {
-    max-width: 300px;
+    width: 300px;
     height: 300px;
     border-radius: 12px;
     padding: 0;
@@ -316,7 +242,7 @@ body {
     background-color: steelblue;
 }
 
-.card-info a {
+.card-href {
     display: inline-block;
     padding: 5px 10px;
     background-color: #007bff;
@@ -327,9 +253,11 @@ body {
     user-select: none;
     transition: background-color 0.3s ease;
     transition-duration: 0.3s;
+    position:absolute;
+    bottom:10px;
 }
 
-.card-info a:hover {
+.card-href:hover {
     background-color: wheat;
 
 }
