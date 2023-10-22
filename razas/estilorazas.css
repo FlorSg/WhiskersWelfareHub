@@ -1,3 +1,4 @@
+/* ----------------------------------------- CSS NAVBAR START----------------------------------*/
 #title {
     display: flex;
     justify-content: space-between;
@@ -93,6 +94,8 @@ body {
     margin: 0;
     padding: 0;
     user-select: none;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 #navegacion {
@@ -102,7 +105,6 @@ body {
     height: 8vh;
     margin: 0;
 }
-
 
 .botones-container {
     background-color: steelblue;
@@ -169,14 +171,29 @@ body {
     text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
 }
 
-/* ----------------------------------------- CSS NAVBAR ----------------------------------*/
+/* ----------------------------------------- CSS NAVBAR END----------------------------------*/
+/* ----------------------------------------- CARDS START ----------------------------------*/
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 80%;
     grid-gap: 20px;
-    grid-column-gap: 3%;
-    width: 80%;
+    grid-column-gap: 5%;
     margin: 0 auto;
+}
+
+@media (max-width: 1250px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 740px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .card {
@@ -193,6 +210,8 @@ body {
     align-items: center;
     box-sizing: border-box;
     transition: transform 0.3s ease;
+    position: relative;
+    padding-bottom: 30px;
 }
 
 .card:hover {
@@ -202,12 +221,11 @@ body {
 .card-image {
     display: flex;
     align-items: center;
-    flex: 1;
     padding: 5px;
 }
 
 .card-image img {
-    max-width: 300px;
+    width: 300px;
     height: 300px;
     border-radius: 12px;
     padding: 0;
@@ -236,7 +254,7 @@ body {
     background-color: steelblue;
 }
 
-.card-info a {
+.card-href {
     display: inline-block;
     padding: 5px 10px;
     background-color: #007bff;
@@ -247,13 +265,17 @@ body {
     user-select: none;
     transition: background-color 0.3s ease;
     transition-duration: 0.3s;
+    position: absolute;
+    bottom: 10px;
 }
 
-.card-info a:hover {
+.card-href:hover {
     background-color: wheat;
 
 }
 
+/* ----------------------------------------- CARDS END----------------------------------*/
+/* ----------------------------------------- FOOTER ----------------------------------*/
 footer p {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -274,10 +296,3 @@ footer a {
 footer a:hover {
     text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
 }
-
-/*falta linkear las imagenes con una API que vaya
-alternando las imagenes por una random de cada raza,
-falta colocar los links en los "leer mas", las 2 nav-bar y
-al "terminos y condiciones".*/
-
-/* ----------------------------------------- CARDS Y FOOTER ----------------------------------*/
