@@ -8,7 +8,8 @@ const { createApp } = Vue
         message: 'Hello Vue!',
         url: "https://api.thecatapi.com/v1/images/search?limit=10",
         data: [],
-        datosPaginado:[]
+        datosPaginado:[],
+        urlBreed: "https://api.thecatapi.com/v1/breeds"
       }
     },
     methods: {
@@ -16,14 +17,23 @@ const { createApp } = Vue
             fetch(url)
             .then((res => res.json()
             .then(data => {
-              console.log(data)
+              // console.log(data)
                 this.data = data;
                 // console.log(this.data)
             })))
+        },
+        fetchBreeds(urlBreed){
+          fetch(urlBreed)
+          .then((res => res.json()
+          .then(data => {
+            this.datosPaginado = data;
+            console.table(this.datosPaginado)
+          })))
         }
     },
     created() {
         this.fetchData(this.url)
+        this.fetchBreeds(this.urlBreed)
     }
   }).mount('#app')
 
