@@ -1,0 +1,35 @@
+#card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#app .cards{
+    width: 33%;
+    height: 300px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 50px 1px #000;
+    border-radius: 7px;
+    object-fit: cover;
+    overflow: hidden;
+}
+#app .cards img{
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+}
+
+#app .cards img:hover{
+    transform: scale(1.1);
+    transition: .3s ease;
+}
