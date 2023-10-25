@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiskersWelfareHub</title>
+    <link rel="stylesheet" type="text/css" href="../index/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="../index/img.index/logoin.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- <img src="img.index/Whiskerswellogo.svg" alt="logo"><a href="#inicio"></a> -->
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Buscar...">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <nav class="nav-container">
+                <ul class="menu">
+                    <li><a href="#">Quiero adoptar</a></li>
+                    <li><a href="#">Unite</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h1>ALIMENTACION FELINA</h1>
+            <img src="../index/img.index/comiendo.jpg" alt="">
+        </div>
+        <div id="app">
+            <div class="cards" v-for="cat in data">
+                <img :src="cat.url" v-bind:alt="cat.id">
+            </div>
+
+            <div v-for="breed in datosPaginado">
+
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../main.js"></script>
+</body>
+
+</html>
