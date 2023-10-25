@@ -101,6 +101,8 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    justify-self: center;
 }
 
 #navegacion {
@@ -110,6 +112,7 @@ body {
     margin: 0;
     padding-bottom: 20px;
 }
+
 
 .botones-container {
     background-color: rgb(63, 63, 63);
@@ -175,19 +178,6 @@ body {
     text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
 }
 
-
-/* ----------------------------------------- CSS NAVBAR END----------------------------------*/
-/* ----------------------------------------- CARDS START ----------------------------------*/
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 80%;
-    grid-gap: 20px;
-    grid-column-gap: 15%;
-    margin: 0 auto;
-    justify-content: center;
-}
-
 @media (max-width: 1250px) {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
@@ -202,104 +192,22 @@ body {
     }
 }
 
-.card {
-    width: 300px;
-    border-radius: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.1);
-    background-color: transparent;
-    align-items: center;
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
-    position: relative;
-    padding-bottom: 30px;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card-image {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-.card-image img {
-    width: 300px;
-    height: 300px;
-    border-radius: 12px;
-    padding: 0;
-    margin-bottom: 10px;
-}
-
-.card-info {
-    align-self: center;
-    background-color: white;
-    padding: 10px;
-    border-radius: 12px;
-    margin: 0px;
-    user-select: none;
-}
-
-.card-info p {
-    margin: 10px 0;
-}
-
-.card-info h3 {
-    color: wheat;
-    font-size: 25px;
-    margin: 0;
-    border: 2px solid steelblue;
-    border-radius: 12px;
-    background-color: steelblue;
-}
-
-.card-href {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
-    margin-top: 10px;
-    user-select: none;
-    transition: background-color 0.3s ease;
-    transition-duration: 0.3s;
-    position: absolute;
-    bottom: 10px;
-}
-
-.card-href:hover {
-    background-color: wheat;
-
-}
-
 .info-gatos img {
     display: flex;
     margin: 0 auto;
     padding: 15px;
-    width: 80%;
-    height: 550px;
+    max-width: 80%;
     object-fit: cover;
     border-radius: 30px;
-    ;
     box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     background-color: transparent;
 }
 
 .info-gatos {
-    position: relative;
-    height: 100vh;
     text-align: left;
-    margin-bottom: 100%;
-    flex: 1
+    margin-bottom: 0px;
+    flex: 1;
 }
 
 .info-gatos p {
@@ -312,45 +220,64 @@ body {
 }
 
 .secciones-salud {
-    position: relative;
-    height: 100vh;
     text-align: left;
-    margin-bottom: 100%;
+    margin-bottom: 0px;
 }
-
-.texto p {
+.texto{
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     text-align: left;
-    padding: 15px;
+    padding: 30px;
     width: 80%;
     margin: 0 auto;
 }
-
-.lista {
-    width: 40%;
-    margin: 0 auto;
+.terminos-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+.terminos-container h1{
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    border-radius: 15px;
-    left: -20%;
-    position: relative;
-    box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    background-color: transparent;
-
 }
 
-.lista-condiciones {
-    width: 40%;
+.terminos-container a{
+    text-decoration: none;
+    color: steelblue;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+.terminos-container a:hover{
+    color: wheat;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+.lista {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: larger
+}
+.lista-terminos{
+    width: 80%;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 0px 10px 2px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
+    border-radius: 15px;
+    font-size: larger;
+    
+}
+.lista-condiciones {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
     background-color: transparent;
     border-radius: 15px;
-    left: -20%;
-    position: relative;
 }
 
 .lista-condiciones a {
@@ -359,6 +286,12 @@ body {
     font-size: large;
     font-weight: bold;
     color: steelblue;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.lista-condiciones a:hover {
+    color: wheat;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
 }
 
 .secciones-salud h1,
@@ -377,8 +310,8 @@ h3 {
 footer {
     bottom: 0;
     width: 100%;
-    padding: 20px 0 0 0;
     margin: 0;
+    padding: 0;
 }
 
 footer p {
@@ -389,7 +322,6 @@ footer p {
     text-align: center;
     justify-content: center;
     background-color: steelblue;
-    padding: 0;
     margin: 0;
 }
 
