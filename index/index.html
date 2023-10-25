@@ -7,7 +7,7 @@
     <title>WhiskersWelfareHub</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="icon" href="img.index/logoinicio.png">
+    <link rel="icon" href="img.index/logodefinitivo.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -59,7 +59,8 @@
                         <input type="password" name="password" id="passwordC">
                     </div>
                     <div class="remember-forgot">
-                        <label><input type="checkbox">Recordarme</label>
+                        <label for="remember"><input type="checkbox" name="" id="remember">Recordarme</label>
+                        <!-- <label><input type="checkbox" name="checkbox" id="recuerdame">Recordarme</label> -->
                         <a href="#">Olvidaste tu contraseña?</a>
                     </div>
                     <button type="submit" class="btn-submit">Login</button>
@@ -92,11 +93,11 @@
                         <input type="password" name="password" id="">
                     </div>
                     <div class="remember-forgot">
-                        <label><input type="checkbox">Estoy de acuerdo con los terminos & condiciones</label>
+                        <label><input type="checkbox" name="checkbox" id="recuerdame">Estoy de acuerdo con los terminos & condiciones</label>
                     </div>
                     <button type="submit" class="btn-submit">Registrarme</button>
                     <div class="login-register">
-                        <p>Ya tienes una cuenta? <a href="#" class="login-link">Ingresar</a></p>
+                        <p>Ya tienes una cuenta? <a href="#" class="login-link"> Ingresar</a></p>
                     </div>
                 </form>
             </div>
@@ -167,23 +168,31 @@
             </div>
         </div>
     </section>
+    <!-- <section class="flyeradopcion">
+        <img src="./img.index/flyeradopcion.svg" alt="flyer">
+    </section> -->
     <section id="enlaces">
-        <h3>Unite a nuestro equipo!</h3>
-        <h4>Formulario de registro</h4>
-        <form class="form-register" action="">
-            <div class="form-field">
-                <input class="controls" type="text" name="nombre" placeholder="Ingrese su nombre">
-                <input class="controls" type="text" name="apellido" placeholder="Ingrese su apellido">
-                <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo">
-                <textarea class="controls text" id="mensaje" name="mensaje" cols="30" rows="5"></textarea>
-            </div>
-            <div class="form-field-bot">
-                <p>Estoy de acuerdo <a href="#">Terminos y condiciones</a></p>
-                <h3>Te gustaria adoptar? Contactanos</h3>
-                <a href=""><i class="fa-solid fa-square-envelope"></i></a>
-                <button class="button" type="submit" value="Registrar">Registrar</button>
-            </div>
-        </form>
+        <div class="formulario-adoption">
+            <form class="form-register" action="">
+                <div class="form-field">
+                    <input class="controls" type="text" name="nombre" placeholder="Ingrese su nombre">
+                    <input class="controls" type="text" name="apellido" placeholder="Ingrese su apellido">
+                    <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo">
+                    <textarea class="controls text" id="mensaje" name="mensaje" cols="30" rows="5" placeholder="Dejanos tu mensaje"></textarea>
+                </div>
+                <div class="form-field-bot">
+                    <div class="flex-check">
+                        <input type="checkbox">Estoy de acuerdo con los  <a href="../terminos y condiciones/terminos.html">terminos y condiciones</a></input>
+                    </div>
+                    <h3>Te gustaria adoptar? Contactanos</h3>
+                    <a href=""><i class="fa-solid fa-square-envelope"></i></a>
+                    <button class="button" type="submit" value="Registrar">Registrar</button>
+                </div>
+            </form>
+        </div>
+        <div class="img-adoption">
+            <img src="./img.index/flyeradopcion.svg" alt="flyer">
+        </div>
     </section>
 
     <!-- <section class="flyerwhiskers">
