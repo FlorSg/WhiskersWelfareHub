@@ -848,6 +848,34 @@ footer .aside-30 hr{
     margin-left: 20%;
 }
 
+
+footer {
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    display: flex;
+    font-family: 'Oswald';
+    font-size: medium;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: wheat;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover {
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+}
+
+
 footer .container-data-down {
     width: 100%;
     display: flex;
@@ -903,112 +931,5 @@ footer .terminos:hover {
 
 
 
-
-
-
-/* footer{
-    width: 100%;
-}
-
-.footer-sidebar{
-    background-color: rgb(54, 47, 47);
-    width: 100%;
-    height: 60%;
-}
-
-
-.widget-area-2 h3{
-    color:#007bff;
-}
-
-.widget-area-2 img{
-    width: 20%;
-    height: 20%;
-    cursor: pointer;
-}
-
-.widget-area-2 .firstp{
-    color: rgb(141, 130, 130)
-}
-
-footer .social li{
-        color: #fff;
-        display: inline-block;
-        text-decoration: none;
-        border: 1px solid #fff;
-        border-radius: 100%;
-        width: 42px;
-        height: 42px;
-        line-height: 42px;
-        margin: 40px 5px;
-        font-size: 20px;
-        transition: .3s ease;
-        cursor: pointer;
-}
-
-footer .up{
-    display:block;
-    width: 50px;
-    height: 50px;
-    background-color: #1CB698;
-    color: #fff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 18px;
-    }
-
-
- */
-
-
-
-
-
-/* 
-
-#enlaces{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#enlaces .enlaces-container{
-    width: 100%;
-    height: 450px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#enlaces .enlaces-container .cards{
-    width: 350px;
-    height: 350px;
-    display: flex;
-    border: 4px solid rgb(90, 90, 221);
-    border-radius: 80px;
-    background-color: #fff;
-    justify-content: center;
-    overflow: hidden;
-    align-items: center;
-    transition: 0.6s ease;
-}
-
-#enlaces .enlaces-container .cards:hover{
-    box-shadow: -21px 25px 17px 6px rgba(0, 0, 0, 0.1);
-}
-
-#enlaces .enlaces-container .cards img{
-    width: 100%;
-    height: 470px;
-    object-fit: cover;
-} */
 
 
