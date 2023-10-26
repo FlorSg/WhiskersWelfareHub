@@ -191,11 +191,14 @@ body {
 
 }
 
-.wrapper{
-    position: fixed;
+.wrapper {
+    z-index: 2;
+    position: absolute;
     width: 400px;
-    top: 20%;
-    right: 30%;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -200px;
     height: 500px;
     background: #fff;
     border: 2px solid rgba(255, 255, 255, 5);
@@ -209,6 +212,7 @@ body {
     transform: scale(0);
     transition: height (.2s);
     transition: transform .5s ease, height .2s ease;
+    max-width: 100%;
 }
 
 .wrapper.active-popup{
@@ -494,23 +498,6 @@ body {
     width: 100%;
     height: 100%;
 }
-/* #enlaces h3{
-    text-align: center;
-    margin: 0;
-    margin-top: 10px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-decoration: underline;
-}
-#enlaces h4{
-    text-align: center;
-    margin: 0;
-    margin-top: 10px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-} */
 
 .form-register{
     width: 350px;
