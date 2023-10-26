@@ -6,36 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salud</title>
     <link rel="stylesheet" href="./salud.css">
-    <link rel="shortcut icon" href="../img/pata.png.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="img.index/logoinicio.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
         <nav>
             <div id="barra">
-                <a href="../index.html">
-                    <button class="boton-home">
-                        <h1 id="title">Whiskers Welfare<p id="smalltitle">hub</p>
-                        </h1>
-                    </button>
-                </a>
-                <div class="botones-derecha">
+                <div class="logo">
+                    <a href="../index/index.html"><img src="../img/logodefinitivo.svg" alt="logo"></a>
+                </div>
+                <div class="botones">
                     <button class="boton-adopcion">
-                        <h2>Quiero Adoptar</h2>
-                    </button>
-                    <button class="boton-unite">
-                        <h2>Unite</h2>
-                        <a href="html.demo.html#c4"></a>
+                        <a href="../index/index.html#enlaces">Quiero adoptar</a>
                     </button>
                 </div>
+                <button id="btnlogin-popup">Iniciar Sesion</button>
             </div>
         </nav>
         <nav>
             <div id="navegacion">
                 <div class="botones-container">
-                    <button id="fb" class="nav-button"><a href="../razas/razas.html">Razas</a></button>
-                    <button class="nav-button"><a href="alimentacion.html">Alimentacion</a></button>
-                    <button class="nav-button"><a href="./salud.html">Salud</a></button>
+                    <ul>
+                        <li><a href="../razas/razas.html" class="nav-button">RAZAS</a></li>
+                        <li><a href="../wiskers/alimentacion.html" class="nav-button">ALIMENTACION</a></li>
+                        <li><a href="../salud/salud.html" class="nav-button">SALUD</a></li>
+                        <li><a href="../wiskers/tienda.html" class="nav-button">TIENDA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="icon-close">
+                    <i class="fa-solid fa-xmark" name="close"></i>
+                </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email">
+                            <label>Email</label>
+                            <input type="text" name="" id="emailtext">
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password">
+                            <label>Contraseña</label>
+                            <input type="password" name="password" id="passwordC">
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Recordarme</label>
+                            <a href="#">Olvidaste tu contraseña?</a>
+                        </div>
+                        <button type="submit" class="btn-submit">Login</button>
+                        <div class="login-register">
+                            <p>No tienes una cuenta?<a href="#" class="register-link">Registrate</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                    <h2>Registro</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+                            <input type="text">
+                            <label>Nombre de usuario</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email">
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password">
+                            <label>Email</label>
+                            <input type="password" name="password" id="">
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Estoy de acuerdo con los terminos & condiciones</label>
+                        </div>
+                        <button type="submit" class="btn-submit">Registrarme</button>
+                        <div class="login-register">
+                            <p>Ya tienes una cuenta? <a href="#" class="login-link">Ingresar</a></p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -427,10 +493,12 @@
     </main>
     <footer>
         <p><br>
-            <a href="../terminos y condiciones/terminos.html"><br>Terminos y condiciones</a> <br>| WhiskersWelfareHub© | Todos los derechos reservados <br><br>
+            <a href="../terminos y condiciones/terminos.html"><br>Terminos y condiciones</a> <br>| WhiskersWelfareHub© |
+            Todos los derechos reservados <br><br>
         </p>
     </footer>
     <script src="./razas.js"></script>
+    <script src="../index/script.js"></script>
 </body>
 
 </html>

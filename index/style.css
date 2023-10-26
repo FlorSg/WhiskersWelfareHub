@@ -117,6 +117,8 @@ body {
     margin: 21px 5px;
     font-size: 20px;
     font-weight: bold;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    transition-duration: 0.4s;
 }
 
 .menu ul{
@@ -142,7 +144,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background-color: #53708c;
+    background-color: steelblue;
     transition: width .3s ease-in-out;
 }
 
@@ -151,10 +153,12 @@ body {
 }
 
 .nav-container .menu li a:hover{
-    color: #D4AF37;
+    color: wheat;
     transform: scale(1.1);
-    transition: 0.5s ease;
-    text-decoration: underline;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
 }
 
 .nav-container .menu li a:hover::after{
@@ -279,9 +283,8 @@ body {
 }
 
 .nav-container #btnlogin-popup:hover{
-    background-color: #D4AF37;
     transform: scale(1.1);
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
 }
 
 
@@ -305,6 +308,7 @@ body {
     justify-content: space-evenly;
     background-color: #33aad9;
     margin-bottom: 0;
+    
 }
 
 .menu2 a{
@@ -312,14 +316,16 @@ body {
     font-family: 'Oswald';
     font-weight: 500;
     text-decoration: none;
-    color:var(--color-texto);
-    transition: .2s ease;
+    color:white;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+    transition-duration: 0.4s;
 }
 
 .menu2 a:hover{
     cursor: pointer;
-    color:#D4AF37;
+    color: wheat;
     transition: .2s ease;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
 
 }
 /* 
