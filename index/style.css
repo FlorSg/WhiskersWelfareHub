@@ -927,7 +927,22 @@ footer .terminos:hover {
 
 
 
+@media (max-width:600px){
 
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width:740px){
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+}
 
 
 
