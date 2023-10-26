@@ -27,7 +27,7 @@ iconClose.addEventListener('click', () => {
 function validar(){
     const name = document.getElementById('nombre');
     const lastName = document.getElementById('apellido');
-    const email = document.getElementById('client-email');
+    const email = document.getElementById('email');
     const msg = document.getElementById('mensaje');
     console.log(name.value)
     console.log(lastName.value)
@@ -64,7 +64,6 @@ function validar(){
         document.getElementById('validar_msg').innerHTML ='&nbsp;';
         alert("Gracias, responderemos a la brevedad");
         const form = document.getElementById('form');
-        form.addEventListener('submit', handleSubmit);
     }
 }
     if(response.ok){
