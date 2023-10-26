@@ -5,37 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhiskersWelfareHub</title>
-    <link rel="stylesheet" type="text/css" href="../wiskers/alimentacion.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="alimentacion.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="icon" href="../index/img.index/logodefinitivo.svg">
+    <link rel="icon" href="img.index/logodefinitivo.svg">
+    <link rel="stylesheet" href="../index/img.index/logodefinitivo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <!-- <img src="img.index/Whiskerswellogo.svg" alt="logo"><a href="#inicio"></a> -->
-            </div>
-            <div class="search">
-                <input type="text" placeholder="Buscar...">
-                <button>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
-            <nav class="nav-container">
-                <ul class="menu">
-                    <li><a href="#">Quiero adoptar</a></li>
-                    <li><a href="#">Unite</a></li>
-                </ul>
-            </nav>
+    <header class="container">
+        <div class="logo">
+            <a href="../index/index.html"><img src="../index/img.index/logodefinitivo.svg" alt="logo"></a>
         </div>
+        <nav class="nav-container">
+            <ul class="menu">
+                <li><a href="#enlaces">Quiero adoptar</a></li>
+            </ul>
+            <button id="btnlogin-popup">Inicia Sesion</button>
+        </nav>
     </header>
     <section id="card-container">
         <div>
-            <h1>ALIMENTACION FELINA</h1>
+            <h1>La alimentación de los gatos – Todo lo que debes saber</h1>
         </div>
         <div id="app">
             <div class="cards" v-for="cat in data">
@@ -47,8 +44,65 @@
             </div>
         </div>
     </section>
+    <section id="info-alimentacion">
+        <h1>¿Qué comen los gatos? ¿Cuál es la alimentación adecuada para estos felinos?</h1>
+        <p>Te contamos lo que necesitas saber para no cometer errores y mantener una buena salud y forma física en tu mascota favorita.</p>
+        <h2>¿Qué debe comer un gato? Su alimentación</h2>
+        <p class="text">El gato es un animal estrictamente carnívoro. Se alimenta de lo que caza, no es carroñero, y basa su dieta en la      uadamente y que deben aportarse en la dieta, como la taurina y la arginina.
+            <br><br>
+            Desde hace unos 10.000 años el gato acompaña al ser humano. El hombre se convirtió en agricultor y comenzó a almacenar alimentos, semillas y grano, lo que atrajo a ratones y pájaros que, a su vez, hicieron que los gatos salvajes se acercaran a los asentamientos humanos y aceptaran una convivencia que perdura hasta hoy en día. Sin embargo, a pesar de que la relación es larga y fructífera, los gatos se han mantenido fieles a su origen salvaje, más que el perro, y apenas hay diferencias entre los gatos de hace miles de años y los de ahora.
+            <br><br>
+            Eso significa que su aparato digestivo no ha variado ni se ha adaptado a una alimentación más «humana»; los cereales, los azúcares, la fécula de las patatas no se han incorporado al menú de los pequeños felinos.
+            Es importante tener presente que un gato no puede pasar sin comer más de tres días. Una de las características de su organismo es que el hígado, ante la falta de alimento, sufre un cambio metabólico que puede provocar un fallo grave que ponga en peligro la vida del animal.
+            <br><br>
+            Los gatos tienen unas necesidades alimentarias específicas que deben contemplarse en su dieta, y que se deben reflejar en la administración equilibrada de los diferentes nutrientes. Según un informe publicado en 2010 por el Centro de Nutrición Animal Waltham, el gato tiende por naturaleza a mantener una dieta rica en proteínas y grasas, y a evitar los hidratos de carbono ya que su organismo no es capaz de asimilarlos.
+        </p>
+    </section>
+    <section class="section2">
+        <h1>Las proteínas en los gatos</h1>
+        <p>La alimentación de un gato exige la presencia de proteínas ya que aportan la mayor parte de la energía que permite que el cuerpo funcione adecuadamente. Las proteínas están compuestas de aminoácidos, elementos esenciales en la asimilación y almacenamiento de los nutrientes (agua, proteínas, carbohidratos, grasas, vitaminas y minerales) y que se encuentran fundamentalmente en los tejidos musculares y las vísceras. Participan de forma sustancial en la formación de tejidos blandos, como los músculos, los tendones o el cartílago; y son necesarios para la transmisión de los impulsos eléctricos del sistema nervioso. En el caso de los gatos, por ejemplo, es necesario que se añada la taurina, pues es un aminoácido que su organismo no asimila directamente, a diferencia del sistema del perro.
+        <br><br>
+        El aparato digestivo de un gato, como carnívoro puro que es, está preparado para la asimilación de altas cantidades de proteínas de origen animal (carne y pescado). Carnes, vísceras, pescado y huevos son las principales fuentes de proteína animal.
+        </p>
+        <img src="../index/img.index/proteinasengatos.jpg" alt="proteinas">
+        <p>En cualquier caso, no olvide que siempre es mejor consultar a su veterinario el tipo de dieta que más conviene a su perro en función de sus necesidad metabólicas.
+        <br><br>
+        La alimentación de un gato exige la presencia de proteínas ya que aportan la mayor parte de la energía que permite que el cuerpo funcione adecuadamente. Las proteínas están compuestas de aminoácidos, elementos esenciales en la asimilación y almacenamiento de los nutrientes (agua, proteínas, carbohidratos, grasas, vitaminas y minerales) y que se encuentran fundamentalmente en los tejidos musculares y las vísceras. Participan de forma sustancial en la formación de tejidos blandos, como los músculos, los tendones o el cartílago; y son necesarios para la transmisión de los impulsos eléctricos del sistema nervioso.
+        <br><br>
+        En el caso de los gatos, por ejemplo, es necesario que se añada la taurina, pues es un aminoácido que su organismo no asimila directamente, a diferencia del sistema del perro.
+        <br><br>
+        El aparato digestivo de un gato, como carnívoro puro que es, está preparado para la asimilación de altas cantidades de proteínas de origen animal (carne y pescado). Carnes, vísceras, pescado y huevos son las principales fuentes de proteína animal.
+        <br><br>
+        En cualquier caso, no olvide que siempre es mejor consultar a su veterinario el tipo de dieta que más conviene a su perro en función de sus necesidad metabólicas.
+        <br>
+        </p>
+    </section>
+    <section class="section3">
+        <h1>Las grasas en los gatos</h1>
+        <p>Las grasas a veces generan rechazo si se asocian a una dieta, humana o de cualquier otro tipo de animal. Las relacionamos con el exceso de peso, aunque en realidad las grasas son elementos de energía necesarios para el organismo. Su exceso puede ser perjudicial pero una falta de grasas tampoco es positiva. No hay que olvidar que el sistema digestivo del gato, por su naturaleza de depredador y de animal exclusivamente carnívoro, está preparado para digerir con facilidad las grasas animales. Al encontrarse tanto en animales como en vegetales las grasas son una fuente de energía y de ácidos grasos relativamente fácil de conseguir.
+        <br><br>
+        Debemos tener presente que las grasas aumentan el sabor, por lo que muchos alimentos preparados abusan de ellas. Un exceso de grasa es causa de obesidad, lo que desemboca en diferentes problemas de salud: sobrecarga en las articulaciones, alteraciones respiratorias y afecciones a nivel cardiovascular, problemas metabólicos y endocrinos, etc. El mayor problema al que nos enfrentamos con las grasas es su exceso en la dieta y, en concreto, la obesidad. El hecho de que un gato esté obeso es una confluencia de varias causas, esencialmente la sobrealimentación, pero ayudan mucho la falta de ejercicio y la ingesta de alimentos inadecuados para una dieta equilibrada del gato.
+        <br><br>
+        Pero un nivel bajo de grasas no es saludable pues puede provocar problemas serios de encías, de cicatrización de heridas, problemas de pelo o infecciones cutáneas. Las grasas aportan los ácidos grasos fundamentales y son el elemento esencial para la asimilación de algunas vitaminas.</p>
+    </section>
+    <section class="section4">
+        <h1>A continuacion te dejamos un video, de GUÍA de ALIMENTACIÓN PARA GATOS de todas las edades que estamos seguros que te será muy util:</h1>
+        <p>Es importante saber cómo alimentar a un gato correctamente, desde que nacen hasta que son mayores, ya que cada uno tiene unas necesidades distintas y requiere de ciertas pautas a tener en cuenta, para que estén siempre bien nutridos en función de su edad.
+        <br><br>
+        Por eso, en este vídeo te vamos a contar una guía detallada de alimentación de nuestros compañeros felinos de todas las edades, teniendo en cuenta las tomas, cantidad, qué tipo de alimento, cómo dárselo y muchísimo más.</p>
+        <br><br>
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/s-q3gMp1BPA?si=NDLylgtGrCwnpqcD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="../main.js"></script>
 </body>
+<footer>
+    <div class="container-data-down">
+    <p class="down"><br>
+        <a href="" class="terminos"><br>Terminos y condiciones</a> <br>| WhiskersWelfareHub© | Todos los
+        derechos reservados <br><br>
+    </p>
+</div>
+</footer>
 
 </html>
