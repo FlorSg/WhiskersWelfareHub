@@ -401,6 +401,7 @@ body {
     margin: 0 auto;
 }
 
+
 .card {
     width: 300px;
     height: 300px;
@@ -924,26 +925,6 @@ footer .terminos {
 footer .terminos:hover {
     text-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
 }
-
-
-
-@media (max-width:600px){
-
-    .card-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-@media (min-width:740px){
-    
-    .card-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }   
-}
-
 
 
 
