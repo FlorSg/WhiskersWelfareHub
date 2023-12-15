@@ -7,6 +7,6 @@ function login(){
 
     if(user === 'Admin' && pass === 'Admin123'){
         alert('Bienvenido señor Stark');
-        window.location = 'https://whiskerswelfarehub.netlify.app/crud-web/productos.html'
+        window.location.href = 'https://whiskerswelfarehub.netlify.app/crud-web/productos.html'
     }
 }
