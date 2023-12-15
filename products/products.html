@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiskersWelfareHub</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" href="../index/img.index/logodefinitivo.svg">
+    <link rel="stylesheet" href="../index/img.index/logodefinitivo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="../img/logodefinitivo.svg" alt="logo"><a href="#inicio"></a>
+        </div>
+        <nav class="nav-container">
+            <ul class="menu">
+                <li><a href="../index/index.html#enlaces">Quiero adoptar</a></li>
+            </ul>
+            <button id="btnlogin-popup">Inicia Sesion</button>
+        </nav>
+    </header>
+    <section id="sub-nav">
+        <div class="links-container">
+            <ul class="menu2">
+                <li><a href="../razas/razas.html" target="_blank">RAZAS</a></li>
+                <li><a href="../wiskers/alimentacion.html" target="_blank">ALIMENTACION</a></li>
+                <li><a href="../salud/salud.html" target="_blank">SALUD</a></li>
+                <!-- <li><a href="../wiskers/reseñas.html" target="_blank">TIENDA</a></li> -->
+            </ul>
+        </div>
+
+        <div class="wrapper">
+            <span class="icon-close">
+                <i class="fa-solid fa-xmark" name="close"></i>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email">
+                        <label>Usuario</label>
+                        <input type="text" name="" id="emailtext">
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password">
+                        <label>Contraseña</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="remember-forgot">
+                        <label for="remember"><input type="checkbox" name="" id="remember">Recordarme</label>
+                        <!-- <label><input type="checkbox" name="checkbox" id="recuerdame">Recordarme</label> -->
+                        <a href="#">Olvidaste tu contraseña?</a>
+                    </div>
+                    <button type="submit" class="btn-submit" onclick="login()">Login</button>
+                    <div class="login-register">
+                        <p>No tienes una cuenta?<a href="#" class="register-link">Registrate</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registro</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text">
+                        <label>Nombre de usuario</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password">
+                        <label>Contraseña</label>
+                        <input type="password" name="password" id="">
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" name="checkbox" id="recuerdame">Estoy de acuerdo con los terminos & condiciones</label>
+                    </div>
+                    <button type="submit" class="btn-submit">Registrarme</button>
+                    <div class="login-register">
+                        <p>Ya tienes una cuenta? <a href="#" class="login-link"> Ingresar</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <section id="card-container">
+        <div>
+            <h1>Productos - Todo lo que necesitas para tu felino Feliz!</h1>
+        </div>
+        <div id="app">
+            <div class="card" v-for="product in products">
+                <div class="card-image">
+                    <img :src="product.imagen" v-bind:alt="product.nombre">
+                </div>
+                <div class="context-card">
+                    <h3>{{product.nombre}}</h3>
+                    <p>${{product.precio}}</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container-data-down">
+            <p class="down"><br>
+                <a href="" class="terminos"><br>Terminos y condiciones</a> <br>| WhiskersWelfareHub© | Todos los
+                derechos reservados <br><br>
+            </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./products.js"></script>
+    <script src="../index/script.js"></script>
+    <script src="./login.js"></script>
+    
+</body>
+</html>
