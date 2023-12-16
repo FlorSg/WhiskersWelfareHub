@@ -66,10 +66,10 @@ function validar(){
         const form = document.getElementById('form');
     }
 }
-    if(response.ok){
-        this.reset()
-        alert('Su mensaje ha sido enviado con exito. Te responderemos a la brevedad, gracias!')
-    }
+    // if(response.ok){
+    //     this.reset()
+    //     alert('Su mensaje ha sido enviado con exito. Te responderemos a la brevedad, gracias!')
+    // }
 
 
 
