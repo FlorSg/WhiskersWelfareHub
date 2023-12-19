@@ -37,30 +37,3 @@ const { createApp } = Vue
     }
   }).mount('#app')
 
-
-
-
-
-
-
-
-
-
-// JavaScript para obtener imágenes de gatos desde la API
-// const getCatButton = document.getElementById('getCatButton');
-// const catImageContainer = document.getElementById('catImageContainer');
-
-// getCatButton.addEventListener('click', () => {
-//     fetch('https://api.thecatapi.com/v1/images/search')
-//         .then(response => response.json())
-//         .then(data => {
-//             const catImageUrl = data[0].url;
-//             const catImage = document.createElement('img');
-//             catImage.src = catImageUrl;
-//             catImage.alt = 'Imagen de un gato';
-//             catImage.classList.add('cat-image');
-//             catImageContainer.innerHTML = '';
-//             catImageContainer.appendChild(catImage);
-//         })
-//         .catch(error => console.error(error));
-// });
