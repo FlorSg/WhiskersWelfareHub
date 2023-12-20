@@ -5,12 +5,13 @@ const { createApp } = Vue
         productos:[],
         //url:'http://localhost:5000/productos', 
    // si el backend esta corriendo local  usar localhost 5000(si no lo subieron a pythonanywhere)
-        url:'https://florsg.pythonanywhere.com/productos',   // si ya lo subieron a pythonanywhere
+        url:'https://whisker.pythonanywhere.com/productos',   // si ya lo subieron a pythonanywhere
         error:false,
         cargando:true,
         /*atributos para el guardar los valores del formulario */
         id:0,
-        nombre:"", 
+        nombre:"",
+        descripcion:"", 
         imagen:"",
         stock:0,
         precio:0,
@@ -44,6 +45,7 @@ const { createApp } = Vue
         grabar(){
             let producto = {
                 nombre:this.nombre,
+                descripcion:this.descripcion,
                 precio: this.precio,
                 stock: this.stock,
                 imagen:this.imagen

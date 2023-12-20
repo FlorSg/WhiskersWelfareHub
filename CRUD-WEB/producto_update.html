@@ -14,7 +14,7 @@
       </header>
       <main>
         <div class="container" id="app">
-          <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+          <form style="background-color: rgb(100, 165, 221);margin:10px auto ; width: 400px; padding: 20px;">
           <h2>Editar Producto </h2>
                <div class="mb-3">
             <label for="id">Id</label>
@@ -23,6 +23,10 @@
           <div class="mb-3">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" v-model="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="descripcion">Descripcion</label>
+            <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
           </div>
           <div class="mb-3">
             <label for="precio">Precio</label>

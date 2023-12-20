@@ -7,10 +7,11 @@ const { createApp } = Vue
       return {
         id:0,
         nombre:"",
+        descripcion:"",
         imagen:"",
         stock:0,
         precio:0,
-        url:'https://florsg.pythonanywhere.com/productos/'+id,
+        url:'https://whisker.pythonanywhere.com/productos/'+id,
        }  
     },
     methods: {
@@ -21,6 +22,7 @@ const { createApp } = Vue
                     console.log(data)
                     this.id=data.id
                     this.nombre = data.nombre;
+                    this.descripcion = data.descripcion
                     this.imagen=data.imagen
                     this.stock=data.stock
                     this.precio=data.precio                    
@@ -33,6 +35,7 @@ const { createApp } = Vue
         modificar() {
             let producto = {
                 nombre:this.nombre,
+                descripcion:this.descripcion,
                 precio: this.precio,
                 stock: this.stock,
                 imagen: this.imagen
