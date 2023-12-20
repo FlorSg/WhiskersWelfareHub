@@ -4,7 +4,7 @@ const { createApp } = Vue
     data() {
       return {
         message: 'Hello Vue!',
-        url: "https://FlorSg.pythonanywhere.com/productos",
+        url: "https://whisker.pythonanywhere.com/productos",
         products: [],
         datosPaginado:[]
       }
